@@ -1,0 +1,260 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Society Connect</span>  <mat-chip-list class="ml-4">
+    <mat-chip>
+		Swaraj Sahakari Gruhrachana Sanstha Maryadit
+    </mat-chip>
+	 </mat-chip-list>
+	<span class="example-spacer"></span>
+    <mat-icon class="example-icon pr-4" aria-hidden="false">event</mat-icon><mat-chip-list aria-label="Fish selection">
+  <mat-chip>2020-2021</mat-chip></mat-chip-list>
+    <mat-icon class="example-icon pr-4" aria-hidden="false" aria-label="Example user verified icon"  matBadge="15" matBadgeColor="warn">email</mat-icon>
+    <mat-icon class="example-icon pr-4" aria-hidden="false" aria-label="Example user verified icon">account_circle</mat-icon>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row> 
+    <a mat-button>Dashboard</a>
+    <a mat-button [matMenuTriggerFor]="Access_Control ">Access Control </a>
+		<mat-menu #Access_Control="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Facility Manager</a>
+		 <a mat-menu-item>Accounts Manager</a>
+		 <a mat-menu-item>Accounts Executive</a>
+		 <a mat-menu-item>Helpdesk Executive</a>
+		 <a mat-menu-item>Auditor</a>
+		</mat-menu>
+	<a mat-button>Helpdesk </a>
+	
+	<a mat-button [matMenuTriggerFor]="Calendar">Calendar</a>
+		<mat-menu #Calendar="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Calendar</a>
+		 <a mat-menu-item>Amenities</a>
+		 <a mat-menu-item>Bookings</a>
+		 <a mat-menu-item>Membership Entity</a>
+		 <a mat-menu-item>Membership</a>
+		  </mat-menu>
+	<a mat-button [matMenuTriggerFor]="Residents">Residents</a>
+		<mat-menu #Residents="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Board/Committee</a>
+		 <a mat-menu-item>Albums</a>
+		 <a mat-menu-item>Resident Vehicle</a>
+		 <a mat-menu-item>Parking Manager</a>
+		</mat-menu>
+	<a mat-button [matMenuTriggerFor]="Reports">Reports</a>
+		<mat-menu #Reports="matMenu">
+		 <a mat-menu-item>Bye Laws Register</a>
+		 <a mat-menu-item>Import Registers</a>
+		</mat-menu>
+    
+	<a mat-button [matMenuTriggerFor]="Manage_Society">Manage Society</a>
+		<mat-menu #Manage_Society="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Edit Society Info</a>
+		 <a mat-menu-item>Escalation Matrix</a>
+		 <a mat-menu-item>Notice Manager</a>
+		 <a mat-menu-item>Change Requests</a>
+		 <a mat-menu-item>Resident Manager</a>
+		 <a mat-menu-item>Units Manager</a>
+		 <a mat-menu-item>Tenant Movement </a>
+		 <a mat-menu-item>Change of Ownership </a>
+		 <a mat-menu-item>Move Tracker</a>
+		 <a mat-menu-item>Token Manager</a>
+		 <a mat-menu-item>Payment Reminder</a>
+		 <a mat-menu-item>Staff Manager</a>
+		 <a mat-menu-item>Resident Staff Manager </a>
+		 <a mat-menu-item>Visitor Tracker</a>
+		</mat-menu>
+    
+	<a mat-button [matMenuTriggerFor]="Import">Import</a>
+		<mat-menu #Import="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Import Residents</a>
+		 <a mat-menu-item>Import Flats/Units</a>
+		 <a mat-menu-item>Import Parking Slots</a>
+		 <a mat-menu-item>Import Tokens</a>
+		 <a mat-menu-item>Import Vehicles</a>
+		</mat-menu>
+    
+	
+	<a mat-button [matMenuTriggerFor]="Master">Master</a>
+		<mat-menu #Master="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Groups</a>
+		 <a mat-menu-item>Ledgers</a>
+		 <a mat-menu-item>Display Vouchers </a>
+		 <a mat-menu-item>Link Debtors Ledgers</a>
+		 <a mat-menu-item>Import Tally Master</a>
+		 <a mat-menu-item>Import Vouchers</a>
+		 <a mat-menu-item>Import Ledgers</a>
+		 <a mat-menu-item>Link Tally Ledgers</a>
+		</mat-menu>
+    
+	<a mat-button [matMenuTriggerFor]="Billing">Billing</a>
+		<mat-menu #Billing="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Billing Heads</a>
+		 <a mat-menu-item>Generate Bills</a>
+		 <a mat-menu-item>Generate Adhoc Bills </a>
+		 <a mat-menu-item>Send Bill Emails</a>
+		 <a mat-menu-item>Current Outstanding</a>
+		 <a mat-menu-item>Post Bills</a>
+		 <a mat-menu-item>Billing Note</a>
+		 <a mat-menu-item>Bill Register</a>
+		 <a mat-menu-item>Receipts Entry</a>
+		 <a mat-menu-item>Meter Reading</a>
+		 <a mat-menu-item>Import Payments</a>
+		 <a mat-menu-item>Bill Adjustment</a>
+		 <a mat-menu-item>Deferment List</a>
+		</mat-menu>
+    
+	<a mat-button [matMenuTriggerFor]="Reports">Reports</a>
+		<mat-menu #Reports="matMenu" class="custom-scroll">
+		 <a mat-menu-item>Cash Book</a>
+		 <a mat-menu-item>Bank Book</a>
+		 <a mat-menu-item>Journal Book </a>
+		 <a mat-menu-item>Interest Report</a>
+		 <a mat-menu-item>General Ledgers</a>
+		 <a mat-menu-item>Member's Ledgers</a>
+		 <a mat-menu-item>Trial Balance</a>
+		 <a mat-menu-item>Profit & Loss A/C</a>
+		 <a mat-menu-item>Balance Sheet</a>
+		 <a mat-menu-item>Pay Register</a>
+		 <a mat-menu-item>Income Expenses </a>
+		 <a mat-menu-item>TDS Reports</a>
+		 <a mat-menu-item>Day Book</a>
+		</mat-menu>
+    
+	<a mat-button>Transactions</a>
+	<a mat-button>Vendors</a>
+	<a mat-button>Tools</a>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<div class="container-fluid">
+<div class="jumbotron text-center">
+	<div class="row">
+		<div class="col-md-4 col-lg-4 col-sm-6">
+		<div class="col-12">
+			<div class="row">
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					<span class="infobox-data-number  text-nowrap">0 + 622</span>
+					<div class="infobox-content  text-nowrap">(Unsold + Sold) Units</div>
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4 col-sm-6">
+			<div class="col-12">
+			<div class="row">
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4 col-sm-6">
+		<div class="col-12">
+		<div class="row">
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				<div class="col-md-12 col-lg-6 col-12 col-sm-12 card p-2">
+					1
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  
+<div class="container-fluid mb-4">
+  <div class="row">
+    <div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+      <div class="card">
+    <div class="card-header text-white bg-primary">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+      <div class="card">
+    <div class="card-header text-white bg-success">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+       <div class="card">
+    <div class="card-header text-white bg-info">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+	<div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+      <div class="card">
+    <div class="card-header text-white bg-warning">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+  </div>
+  
+  <div class="row mt-2">
+    <div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+      <div class="card">
+    <div class="card-header text-white bg-danger">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+      <div class="card">
+    <div class="card-header text-white bg-secondary">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+    <div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+       <div class="card">
+    <div class="card-header text-white bg-dark">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+	<div class="col-sm-6 col-12 col-md-6 col-lg-3 mt-2">
+      <div class="card">
+    <div class="card-header text-white" style="background-color: purple">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+    </div>
+  </div>
+  
+</div>
+</div>
